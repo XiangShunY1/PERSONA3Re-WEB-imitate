@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var str = "我是,<br/>大帅哥";
+        document.write(str);
+        //获取字符串长度
+        console.log(str.length);
+
+        //获取字符串指定位置的字符
+
+        var num1 = 9;
+        console.log(str.charAt(num1-1));
+
+        var str1 = "Hello";
+        var str2 = "World";
+        var str3 = "!";
+
+        //字符串合并
+        var result = str1.concat(str2,str3);
+        console.log(result);
+
+        var one = 1;
+        var two = 2;
+        var three = 3;
+
+        //等于 1和5合并成15
+        console.log(''.concat(one,(two+three)))
+        console.log(one + two + three)
+
+        var name = "it百战"
+
+        //表示从字符串位置2开始，返回2和3位置的字符串（返回结果不含结束位置）
+        console.log(name.substring(2,4))
+
+        //表示从0开始截取，截取长度为2的字符串
+        console.log(name.substr(0,2))
+
+        //表示截取倒数第二位的字符串，长度为2
+        console.log(name.substr(-2,2))
+
+        var shige = "床前明月光，疑是地上霜"
+
+        //表示从该字符串中查找相对应的字符串，从长度12后开始查找，如果查到则返回该字符串最先出现的位置，没有则返回-1
+        console.log(shige.indexOf("疑是地上霜",12))
+
+        var HelloWorld = " He llo \n Wor ld! "
+
+        //去掉前后的空格，不能去除字符串中间的空格，还能去掉特殊符号如制表符\t、换行符\n，和回车符\r，只能去掉前后两边
+        //ES6新语法 .trimEnd(去掉尾部)，.trimStart()去掉头部
+        console.log(HelloWorld.trim())
+
+        var HelloJavaScript = "Hello|JavaScript|"
+
+        //返回一个每个字符串都分割的数组
+        console.log(HelloJavaScript.split(""))
+        //返回一个根据|规则分割的数组
+        console.log(HelloJavaScript.split("|"))
+
+        //返回一个根据|规则分割并且只保留第一个分割的字符串的数组
+        console.log(HelloJavaScript.split("|",1))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arr = ['sxt','baizhan','it'];
+        console.log(arr)
+
+        var names = [];
+
+        //给数组里面某个长度赋值，空出来的则为empty
+        names[0] = 'qingshui';
+        names[1] = 'aofeiya';
+        names[3] = 'nnmw'
+        console.log(names);
+
+        //多维数组：数组里面一层数组，成为二维数组
+        var towArr = [100,200,["iwen","frank"]]
+        console.log(towArr)
+
+        //数组遍历：
+        //声明一个数字类型为0，进行小于数组长度的循环遍历
+        for(var i=0;i<arr.length;i++){
+            console.log(arr[i])
+        }
+
+        var i = 0
+        while (i<arr.length){
+            console.log(arr[i])
+            i++
+        }
+
+        var a = [10,"20","帅哥",true]
+        //查询是否为数组
+        console.log(Array.isArray(a))
+
+        //从数组的末尾添加一个变量
+        arr.push('Wool')
+
+        //从数组的末尾删除一个变量并且返回他删除的变量
+        console.log(arr.pop())
+
+        //从数组的开头删除一个变量并返回你从数组开头删除的变量的数组
+        console.log(arr.shift())
+
+        //向数组的第一个位置添加元素，可以接受多个参数
+        arr.unshift('nihao','aoteman')
+
+        console.log(arr)
+
+        //分割数组，会把二维数组也分割
+        console.log(towArr.join())
+
+        //将数组切割成一段字符串
+        var ArrAy = ['Hello','World',"My","Firend"]
+        var S = ArrAy.join(' ')
+        console.log(S + '!')
+
+        //数组合并
+        var fuhao = '!'
+        console.log(ArrAy.concat(fuhao))
+        console.log(['Hello','World',"My","Firend"].concat(['!']))
+
+        //数组翻转
+        console.log(ArrAy.reverse())
+
+        //查找
+        //若存在，返回当前位置，不存在返回-1
+        console.log(ArrAy.indexOf("Wool"))
+
+    </script>
+</body>
+</html>

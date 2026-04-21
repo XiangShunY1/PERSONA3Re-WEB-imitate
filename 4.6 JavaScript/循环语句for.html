@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //需求：从1打印到100
+    //循环条件：赋值i=0，i执行条件表达式，只有值为真时才继续执行循环，每轮循环结束后i+1
+    for(var i=0;i<=100;i++){
+        //console.log(i)
+    }
+
+    //循环输出100以内的奇数
+    for(var i=0;i<=100;i++){
+        if(i%2 !=0){
+            //console.log(i)
+        }
+    }
+
+    //打印九九乘法表
+    // 字符串和数字相加：会显示一个字符串的格式
+    for(var i=1;i<10;i++){
+        for(var j=1;j<=i;j++){
+            document.write(j + "x" + i + "=" + i*j)
+            document.writeln(" ");
+        }
+        document.write("<br/>")
+    }
+    
+    for (var i = 1; i < 10; i++) {
+            for (var j = 1; j <= i; j++) {
+                document.write(j + "×" + i + "=" + i * j);
+                document.writeln(" ");
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>

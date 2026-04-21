@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Hello</div>
+    <div>World</div>
+
+    <p class="text">aofiya</p>
+
+    <form name="login">登录</form>
+
+    <div id="root">Hahah</div>
+
+    <script>
+
+        //获取div标签
+       var div1 =  document.getElementsByTagName("div")[0]
+       var div2 = document.getElementsByTagName("div")[1]
+
+       //修改获取的div标签
+        div1.innerHTML = "Hello World!"
+
+        //获取class为text的标签
+        var text1 = document.getElementsByClassName("text")[0]
+       
+        //获取name为login的标签
+        var login1 = document.getElementsByName("login")[0]
+
+        //获取id为root的标签
+        var root1 = document.getElementById("root")
+
+        console.log(login1);
+        
+    </script>
+</body>
+</html>

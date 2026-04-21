@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var user = {
+            name : "aofeiya",
+            age : 20,
+            gender : 0,
+            jobs:["it","sxt"],
+            flag:true,
+            getName:function(){
+                console.log("iwen")
+            },
+            container:{
+                frontEnd:"WEB前端",
+                backEnd:["python","java"]
+            }
+
+        }
+
+        console.log(user.name)
+
+        for(var i=0;i<user.jobs.length;i++){
+          console.log(user.jobs[i]);
+            
+        }
+
+        user.getName()
+
+        //链式调用
+        console.log(user.container.frontEnd);
+        
+
+    </script>
+</body>
+</html>
