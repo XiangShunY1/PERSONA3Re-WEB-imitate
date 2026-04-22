@@ -11,6 +11,7 @@ titleEnd.addEventListener("animationend",function(){
     var video2 = document.getElementById("video2")
     var audio = document.getElementById("audio")
     video1.style.display = 'block'
+    audio.play()
     audio.load()
     video1.play()
     video1.addEventListener("ended",function(){
